@@ -1,0 +1,20 @@
+name: Football Game CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Build and deploy game
+      run: |
+        # Add commands here to build and deploy your football game
+        # For example, you might use a build tool like webpack or parcel
+        # and deploy the game to a hosting platform like GitHub Pages or Netlify
